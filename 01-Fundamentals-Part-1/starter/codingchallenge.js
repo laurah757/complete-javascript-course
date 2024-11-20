@@ -55,3 +55,82 @@
 // } else {
 //   console.log(`John's BMI (${bmiCalculationJohn2}) is higher than Mark's! (${bmiCalculationMark2})`)
 // }
+
+// CODING CHALLENGE 3
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//     console.log("Dolphins win the trophy");
+// } else if(scoreKoalas > scoreDolphins) {
+//     console.log("Koalas win the trophy");
+// } else if(scoreDolphins === scoreKoalas) {
+//     console.log("Both win the trophy")
+// }
+
+// Bonus 1
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+
+// const minScoreDolphins = scoreDolphins >= 100;
+// const minScoreKoalas = scoreKoalas >= 100;
+
+// if (scoreDolphins > scoreKoalas && minScoreDolphins) {
+//     console.log("Dolphins win the trophy");
+// } else if(scoreKoalas > scoreDolphins && minScoreKoalas) {
+//     console.log("Koalas win the trophy");
+// } else if(scoreDolphins === scoreKoalas && minScoreDolphins && minScoreKoalas) {
+//     console.log("Both win the trophy");
+// } else if(!minScoreDolphins && !minScoreKoalas) {
+//     console.log("Nobody wins. Everybody is a looser!");
+// }
+
+// Data 2
+
+// const scoreDolphins = (97 + 112 + 101) / 3;
+// const scoreKoalas = (109 + 95 + 123) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// const minScoreDolphins = scoreDolphins >= 100;
+// const minScoreKoalas = scoreKoalas >= 100;
+
+// if (scoreDolphins > scoreKoalas && minScoreDolphins) {
+//     console.log("Dolphins win the trophy");
+// } else if(scoreKoalas > scoreDolphins && minScoreKoalas) {
+//     console.log("Koalas win the trophy");
+// } else if(scoreDolphins === scoreKoalas && minScoreDolphins && minScoreKoalas) {
+//     console.log("Both win the trophy");
+// } else if(!minScoreDolphins && !minScoreKoalas) {
+//     console.log("Nobody wins. Everybody is a looser!");
+// }
+
+// DATA 3
+
+// const scoreDolphins = (97 + 112 + 101) / 3;
+// const scoreKoalas = (109 + 95 + 106) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// const minScoreDolphins = scoreDolphins >= 100; // nicht nowendig
+// const minScoreKoalas = scoreKoalas >= 100; // einfach nur hinter das &&
+
+// if (scoreDolphins > scoreKoalas && minScoreDolphins) {
+//     console.log("Dolphins win the trophy");
+// } else if(scoreKoalas > scoreDolphins && minScoreKoalas) {
+//     console.log("Koalas win the trophy");
+// } else if(scoreDolphins === scoreKoalas && minScoreDolphins && minScoreKoalas) {
+//     console.log("Both win the trophy");
+// } else  /*if(!minScoreDolphins && !minScoreKoalas) nicht notwendig*/ {
+//     console.log("Nobody wins. Everybody is a looser!");
+// }
+
+
+// CHALLENGE #4
+
+// const bill = 430;
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2  
+// console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+

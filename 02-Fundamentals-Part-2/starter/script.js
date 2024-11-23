@@ -171,19 +171,100 @@
 
 // EXERCISE 
 
-const calcAge = function (birthYear) {
-  return 2024 - birthYear;
+// const calcAge = function (birthYear) {
+//   return 2024 - birthYear;
+// }
+
+// const years = [1960, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[2]);
+// console.log(age1, age2, age3);
+
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2]), calcAge(years[years.length - 1])];
+// console.log(ages);
+
+// ARRAY OPERATIONS 
+
+// const friends = ["Michael", "Steven", "Peter"];
+// const newLength = friends.push("Jay"); // Adds at the end of array
+
+// console.log(friends);
+// console.log(newLength);
+
+// friends.unshift("John"); // adds at the beginning
+// console.log(friends);
+
+// friends.pop();
+// const popped = friends.pop();
+// console.log(friends); // removes the last element
+// console.log(popped);
+
+// friends.shift(); // removes first element
+// console.log(friends);
+
+// console.log(friends.indexOf("Steven")); // tells the position in array
+
+// console.log(friends.includes("Steven")); // tells if element is included (true/false)
+
+///////////////////////////////////////////////////////////////////////
+
+// CODING CHALLENGE
+
+// const calcTip = function(bill) {
+//   if (bill >=50 && bill <= 300) {
+//     return bill * 0.15;
+//   } else { return bill * 0.2 }
+  
+// } 
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(bills, tips);
+
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(totals);
+
+//////////////////////////////////////////////////////////
+
+// OBJECTS
+
+// const jonasArray = [
+//   "Jonas",
+//   "Schmedtmann",
+//   2037 - 1991,
+//   "teacher",
+//   ["Michael", "Peter", "Steven"]
+// ];
+
+// Object mit key/property (age) value (2037 - 1991) pairs
+
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   age: 2037 - 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"]   
+// }
+
+// DOT VS BRACKET NOTATION
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"]   
 }
 
-const years = [1960, 1967, 2002, 2010, 2018];
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[2]);
-console.log(age1, age2, age3);
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
 
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[2]), calcAge(years[years.length - 1])];
-console.log(ages);
-
+const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends");
+console.log(jonas[interestedIn]);
 
 

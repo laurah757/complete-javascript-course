@@ -249,22 +249,116 @@
 
 // DOT VS BRACKET NOTATION
 
-const jonas = {
-  firstName: "Jonas",
-  lastName: "Schmedtmann",
-  age: 2037 - 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"]   
-}
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   age: 2037 - 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"]   
+// }
 
-console.log(jonas.lastName);
-console.log(jonas["lastName"]);
+// console.log(jonas.lastName); // Dot Notation
+// console.log(jonas["lastName"]); // Brackets Notation -> String with property name
 
-const nameKey = "Name";
-console.log(jonas["first" + nameKey]);
-console.log(jonas["last" + nameKey]);
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
 
-const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends");
-console.log(jonas[interestedIn]);
+// const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends");
+
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]); // You can put any expression in brackets
+// } else {
+//   console.log("Wrong input! Choose between firstName, lastName, age, job and friends." );
+// }
+
+// jonas.location = "Portugal";
+// jonas["twitter"] ="@jonasschmedtman";
+// console.log(jonas);
+
+// // Challenge
+// // "Jonas has 3 friends, and his best friend is called Michael."
+
+// console.log(`${jonas["firstName"]} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// OBJECT METHODS 
+
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   birthYear: 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"],
+//   hasDriversLicense: false,
+
+//   // calcAge: function(birthYear) {
+//   //   return 2037 - birthYear;
+//   // }
+
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+
+//   getSummary: function() {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? "a" : "no"} drivers license. `
+//   }
+// };
+
+
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// // console.log(jonas["calcAge"](1991));
+
+// // Challenge
+
+// // "Jonas is a 46-year old teacher, and he has a drivers license."
+
+// console.log(jonas.getSummary());
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// CODING CHALLENGE
+
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 78,
+//   height: 1.69,
+  
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height) 
+//     return this.bmi
+//   }
+// }
+// mark.calcBMI();
+// console.log(mark.bmi);
+
+// const john = {
+//   fullName: "John Smith",
+//   mass: 92,
+//   height: 1.95,
+
+//   calcBMI: function () {
+//     this.bmi = this.mass / (this.height * this.height) 
+//     return this.bmi
+//   }
+// }
+// john.calcBMI();
+// console.log(john.bmi);
+
+// if (mark.bmi > john.bmi) {
+//   console.log(`${mark.fullName}'s BMI (${mark.bmi.toFixed(2)}) is higher than ${john.fullName}'s BMI (${john.bmi.toFixed(2)}).`);
+// } else if (john.bmi > mark.bmi) {
+//   console.log(`${john.fullName}'s BMI (${john.bmi.toFixed(2)}) is higher than ${mark.fullName}'s BMI (${mark.bmi.toFixed(2)}).`);
+// } 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// LOOPS
 
 
